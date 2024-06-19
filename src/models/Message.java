@@ -9,11 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+// DTOに合わせて、"message"テーブルが自動生成される
+
 @Entity
 @Table(name = "messages")
 public class Message {
-
-    // DTOに合わせて、"message"テーブルが自動生成される
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
